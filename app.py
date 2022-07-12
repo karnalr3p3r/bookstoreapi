@@ -40,7 +40,7 @@ def add_book():
     description = request.json.get("description")
     author = request.json.get("author")
     price = request.json.get("price")
-
+ 
     record = Books(name, price, author, description)
     db.session.add(record)
     db.session.commit()
